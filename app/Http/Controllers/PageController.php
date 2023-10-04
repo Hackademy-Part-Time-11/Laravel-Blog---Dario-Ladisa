@@ -17,4 +17,8 @@ class PageController extends Controller
     return view('pages.chi_sono', ['descrizione'=> $descrizione]);
     }
 
+    public function showCont(){
+        return view('pages.contatti');
+    }
+
 }

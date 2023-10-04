@@ -24,6 +24,10 @@
         <li class="nav-item">
             <a class="nav-link active text-white" href="/articles">Prodotti</a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link active text-white" href="/contatti">Contatti</a>
+        </li>
     </ul>
     
     <p class="fs-4 text-center fst-italic ">

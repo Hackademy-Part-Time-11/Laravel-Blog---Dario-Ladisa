@@ -10,10 +10,10 @@ class ArticleController extends Controller
 
     public function __construct(){
 
-    $articles = [
+    $this->articles = [
         1 => ['id' => 1, 'title' => 'Pane di segale', 'category' => 'prodotti speciali', 'description' => 'Super pane di segale.', 'visible' => false],
-        2 => ['id' => 2, 'title' => 'Risultati Olimpiadi 2024', 'category' => 'Sport', 'description' => 'Risultati e medaglie vinte alle Olimpiadi del 2024.', 'visible' => true],
-        3 => ['id' => 3, 'title' => 'Nuove Politiche Fiscali', 'category' => 'Economia', 'description' => 'Le ultime novità sulle politiche fiscali nazionali ed estere.', 'visible' => true]
+        2 => ['id' => 2, 'title' => 'Piadine', 'category' => 'Pizzelle', 'description' => 'Prova le nostre piadine!', 'visible' => true],
+        3 => ['id' => 3, 'title' => 'Nuovi Grissini', 'category' => 'Grissini', 'description' => 'Grissini con semi di sesamo fatti in casa.', 'visible' => true]
         ];
     }
 

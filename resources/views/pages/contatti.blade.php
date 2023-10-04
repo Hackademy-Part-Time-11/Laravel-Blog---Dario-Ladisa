@@ -26,11 +26,8 @@
         </li>
     </ul>
     
-    <p class="fs-4 text-center fst-italic ">
-        {{$descrizione}}
-    </p>
 
-    <h1>CONTATTI</h1>
+    <h1 class='mt-4 text text-center'>CONTATTI</h1>
 
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

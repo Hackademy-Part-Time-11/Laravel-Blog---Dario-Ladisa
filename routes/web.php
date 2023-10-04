@@ -13,11 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOME
 Route::get('/',[App\Http\Controllers\PageController::class,'shome']) -> name('home');
 
+// CHI SONO
 Route::get('/chi_sono',[App\Http\Controllers\PageController::class,'shofunc']) -> name('chi_sono');
 
+// PRODOTTI (ARTICLES)
 Route::get('/articles', [App\Http\Controllers\ArticleController::class,'index']) -> name('articles');
+
+// CONTATTI
+Route::get('/contatti', [App\Http\Controllers\PageController::class, 'showCont']) -> name('contatti');
  
+//ARTICLE
 Route::get('/article/{id}', [App\Http\Controller\ArticleController::class,'show']) -> name('article'); 
 

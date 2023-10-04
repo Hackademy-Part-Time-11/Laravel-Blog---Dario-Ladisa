@@ -22,6 +22,10 @@
         <li class="nav-item">
             <a class="nav-link active text-white" href="/chi_sono">Chi sono</a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link active text-white" href="/contatti">Contatti</a>
+        </li>
     </ul>
 
     <h1 class="text-center fst-italic">I miei prodotti...</h1>
@@ -31,14 +35,14 @@
     <div class="container">
         <div class="row">
             @foreach ($articles as $article)
-                <div class="col-md-3">
-                    @if ($article['visible'] == true)
+                <div class="col-md-4">
+                    @if ($article['visible'])
                         <div class="card" style="width: 18rem;">
-                            <img src="https://picsum.photos/200/201" class="card-img-top" alt="...">
+                            <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $article['title'] }}</h5>
                                 <p class="card-text">{{ $article['description'] }}</p>
-                                <a href="{{ route('article').'/'.$article['id']}}" class="btn btn-primary">Read More</a>
+                                <a href="{{route('article',$article['id'])}}" class="btn btn-primary">Read More</a>
                             </div>
                         </div>
                     @else

@@ -19,6 +19,10 @@
         <li class="nav-item">
             <a class="nav-link active text-white" href="/chi_sono">Chi sono</a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link active text-white" href="/contatti">Contatti</a>
+        </li>
     </ul>
 
 
