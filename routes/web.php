@@ -26,5 +26,8 @@ Route::get('/articles', [App\Http\Controllers\ArticleController::class,'index'])
 Route::get('/contatti', [App\Http\Controllers\PageController::class, 'showCont']) -> name('contatti');
  
 //ARTICLE
-Route::get('/article/{id}', [App\Http\Controller\ArticleController::class,'show']) -> name('article'); 
+Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class,'show']) -> name('article'); 
+
+//USER LOGIN 
+Route::get('/login', [App\Http\Controllers\PageController::class, 'userLogin']) -> name('login');
 

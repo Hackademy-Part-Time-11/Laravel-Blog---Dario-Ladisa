@@ -11,20 +11,7 @@
 </head>
 <body>
       
-    <ul class="nav justify-content-center bg-danger">
-        <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="/articles">Prodotti</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link active text-white" href="/chi_sono">Chi sono</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link active text-white" href="/contatti">Contatti</a>
-        </li>
-    </ul>
-
+    <x-navbar />
 
     <h1 class="text-center" >Il sito di {{$nome}}, panettiere dal {{$anno}}.</h1>
     

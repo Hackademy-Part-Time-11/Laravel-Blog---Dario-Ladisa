@@ -11,7 +11,7 @@ class ArticleController extends Controller
     public function __construct(){
 
     $this->articles = [
-        1 => ['id' => 1, 'title' => 'Pane di segale', 'category' => 'prodotti speciali', 'description' => 'Super pane di segale.', 'visible' => false],
+        1 => ['id' => 1, 'title' => 'Pane di segale', 'category' => 'prodotti speciali', 'description' => 'Super pane di segale.', 'visible' => true],
         2 => ['id' => 2, 'title' => 'Piadine', 'category' => 'Pizzelle', 'description' => 'Prova le nostre piadine!', 'visible' => true],
         3 => ['id' => 3, 'title' => 'Nuovi Grissini', 'category' => 'Grissini', 'description' => 'Grissini con semi di sesamo fatti in casa.', 'visible' => true]
         ];
@@ -27,6 +27,8 @@ class ArticleController extends Controller
 
     public function show($id){
 
+        $articles = $this->articles;
+        // dd($articles[$id]);
         return view('pages.article', ['article' => $articles[$id]]);
 
     }
