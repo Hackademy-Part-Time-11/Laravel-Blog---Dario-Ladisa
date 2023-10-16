@@ -21,13 +21,16 @@ Route::get('/chi_sono',[App\Http\Controllers\PageController::class,'shofunc']) -
 
 // PRODOTTI (ARTICLES)
 Route::get('/articles', [App\Http\Controllers\ArticleController::class,'index']) -> name('articles');
-
-// CONTATTI
-Route::get('/contatti', [App\Http\Controllers\PageController::class, 'showCont']) -> name('contatti');
  
 //ARTICLE
 Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class,'show']) -> name('article'); 
 
 //USER LOGIN 
 Route::get('/login', [App\Http\Controllers\PageController::class, 'userLogin']) -> name('login');
+
+//GET FORM
+Route::get('/contatti', [App\Http\Controllers\ContactController::class, 'viewForm']) -> name('contatti');
+
+//POST FORM
+Route::post('/contatti/invia', [App\Http\Controllers\ContactController::class, 'sendForm']) -> name('contatti.sendForm');
 
