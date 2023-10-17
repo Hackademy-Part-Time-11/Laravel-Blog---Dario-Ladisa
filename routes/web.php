@@ -28,9 +28,9 @@ Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class,'show
 //USER LOGIN 
 Route::get('/login', [App\Http\Controllers\PageController::class, 'userLogin']) -> name('login');
 
-//GET FORM
+//VISUALIZZA IL FORM
 Route::get('/contatti', [App\Http\Controllers\ContactController::class, 'viewForm']) -> name('contatti');
 
-//POST FORM
+//RICEVE ED ELABORA I DATI DEL FORM
 Route::post('/contatti/invia', [App\Http\Controllers\ContactController::class, 'sendForm']) -> name('contatti.sendForm');
 

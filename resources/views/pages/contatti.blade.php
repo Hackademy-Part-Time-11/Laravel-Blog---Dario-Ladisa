@@ -7,6 +7,10 @@
                 
                 <h1>Contattaci</h1>
 
+                <x-success />
+
+                <x-errors />
+
                 <form action="{{ route('contatti.sendForm') }}" method="POST">
                     @csrf
 
